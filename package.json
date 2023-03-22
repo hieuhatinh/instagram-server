@@ -1,0 +1,32 @@
+{
+  "name": "instagram-server",
+  "version": "1.0.0",
+  "description": "instagram server",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --inspect src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hieuhatinh/instagram-server.git"
+  },
+  "keywords": [
+    "instagram",
+    "server"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hieuhatinh/instagram-server/issues"
+  },
+  "homepage": "https://github.com/hieuhatinh/instagram-server#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.2"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.21"
+  }
+}

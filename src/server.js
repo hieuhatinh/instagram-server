@@ -7,6 +7,9 @@ const db = require("./config/db/connect");
 
 app.use(morgan("combined"));
 
+app.use(express.json()); // for parsing application/json
+app.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
+
 // Connect DB
 db.connect();
 

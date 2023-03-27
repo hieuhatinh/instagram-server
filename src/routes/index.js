@@ -1,11 +1,11 @@
-const routerLogin = require("./login");
+const routerAccounts = require("./accounts");
 
 function routers(app) {
-  app.get("/", (req, res) => {
-    res.send("Hello World!");
-  });
+  // app.use("/", (req, res) => {
+  //   res.send("Hello World!");
+  // });
 
-  app.use("/login", routerLogin);
+  app.use("/accounts", routerAccounts);
 }
 
 module.exports = routers;
